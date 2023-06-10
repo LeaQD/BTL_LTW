@@ -1,0 +1,182 @@
+.booklist,
+.book-details {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.booklist-content {
+    gap: 3rem;
+}
+
+.book-item {
+    padding: 3rem 2rem;
+    border-radius: 4px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+    transition: var(--transition);
+}
+
+.book-itemxx {
+    padding: 3px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+    transition: var(--transition);
+}
+
+.book-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.book-item-img img {
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.book-item-info {
+    margin-top: 2rem;
+}
+
+.book-item-info-item.title {
+    line-height: 1.4;
+    /* margin-bottom: 0.8rem; */
+}
+
+.book-item-info-item.author {
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.book-item-info-item:not(.book-item-info-item.title) span:last-child {
+    opacity: 0.8;
+}
+
+.book-item-info-item.publish-year {
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+    .booklist-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .booklist-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .book-item-img img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .booklist-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .book-item-img img {
+        max-width: 250px;
+    }
+}
+
+div {
+    display: grid;
+    align-items: center;
+}
+
+.book-detail {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px 600px;
+    grid-template-rows: 100px 300px 100px 100px;
+    grid-template-areas:
+        "c1 c2 c0"
+        "c4 c4 c3"
+        "c5 c6 c3"
+        "c7 c7 c3"
+}
+
+/* .book {
+    padding: 10px;
+    margin: 10px;
+} */
+
+.items-3 {
+    grid-area: c3;
+}
+
+.items-4 {
+    grid-area: c4;
+}
+
+.items-5 {
+    grid-area: c5;
+}
+
+.items-6 {
+    grid-area: c6;
+}
+
+.items-7 {
+    grid-area: c7;
+}
+
+.text-input {
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    height: 30px;
+}
+
+.text-area {
+    font-family: 'Times New Roman', Times, serif;
+    width: 700px;
+    height: 200px;
+}
+
+.btn-upload {
+    grid-area: c0;
+    position: absolute;
+    top: 120px;
+    right: 300px;
+    justify-self: center;
+    /* Đặt button ở giữa theo chiều ngang */
+}
+
+.img {
+    grid-area: c3;
+    max-width: 100%;
+    max-height: 450px;
+    right: 50px;
+    bottom: 100px;
+    border: 1px solid #984d4d;
+    overflow: hidden;
+    /* Định dạng đường viền */
+}
+
+.button-cart {
+    align-items: center;
+}
+
+.btn-cart {
+    text-align: center;
+    margin-top: 3px;
+    justify-self: center;
+    width: 200px;
+    height: 30px;
+}
+
+.text-notif {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: red;
+}
+
+/* .container {
+    display: flex;
+} */

@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    position: "fixed";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffff;
+    padding: 20px;
+    text-align: center;
+
+    .size {
+        align-items: right;
+        height: 40px;
+        width: 100px;
+    }
+}
+
+.footer-buttons {
+    margin-left: 40px;
+    /* Khoảng cách giữa các nút */
+}

@@ -1,0 +1,31 @@
+.form {
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    /* background-image: url('../../../public/image/login.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.input-user {
+    font-family: 'Times New Roman', Times, serif;
+    width: 500px;
+    height: 50px;
+    border: 1px solid #121111;
+    border-radius: 10px;
+
+}
+
+.text-login {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 'bold';
+    color: rgb(79, 63, 63);
+}
+
+.text-noti {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
