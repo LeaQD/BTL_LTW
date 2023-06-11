@@ -1,0 +1,27 @@
+CREATE SCHEMA `library` ;
+go
+CREATE TABLE `library`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `numberphone` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `role` TINYINT NOT NULL 
+  PRIMARY KEY (`id`));
+go
+INSERT INTO `library`.`user` (`id`, `username`, `password`, `numberphone`, `email`, `role`) VALUES ('1', 'Diep', '123456', '0971715520', 'trinhquyendiep2002@gmail.com', '1');
+INSERT INTO `library`.`user` (`username`, `password`, `numberphone`, `role`) VALUES ('Lan', '123456', '0363182742', '0');
+go
+CREATE TABLE `library`.`book` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `image` NVARCHAR(45) NOT NULL,
+  `title` NVARCHAR(45) NOT NULL,
+  `author` NVARCHAR(45) NOT NULL,
+  `category` NVARCHAR(45) NOT NULL,
+  `date` DATE NOT NULL,
+  `npage` INT NOT NULL,
+  `nsold` INT NOT NULL,
+  `about` NVARCHAR(500) NOT NULL
+  PRIMARY KEY (`id`));
+go
+INSERT INTO `library`.`book` (`id`, `image`,`title`, `author`, `category`, `date`, `npage`, `nsold`,`about`) VALUES ('1','sach1.png' 'Con bo con', 'Diệp', 'hài hước', '2023/03/01', '12', '123','con bò và chú thỏ');
