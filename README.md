@@ -8,8 +8,7 @@ Website có chức năng Đăng ký/ Đăng nhập. Thông tin tài khoản củ
 website lưu trữ sẽ bao gồm ít nhất: tên, email, mật khẩu.
 - Nếu admin đăng nhập với tài khoản admin thì có thực hiện được những chức năng
 của admin để quản lý thư viện sách.
-- Người dùng phải đăng ký tài khoản mới có thể đăng nhập và sử dụng tài khoản
-của họ để thực hiện những việc như: mua bán và đưa ra nhận xét đánh giá về sách.
+- Người dùng phải đăng ký tài khoản mới có thể đăng nhập và sử dụng tài khoản của họ để xem sách
 
 **1. Chức năng của quản lý (Admin).**
 Chức năng của quản lý sẽ có 1 bảng hiển thị những sách đang có trong thư viện. Các cột
@@ -32,18 +31,4 @@ Người dùng có thể sử dụng trang web thư viện bán sách thông qua
 sách đã có trong cơ sở dữ liệu, thông tin được hiển thị của các quyển sách này bao
 gồm: bìa sách, tên sách và tên tác giả.
 Người dùng có thể bấm vào từng quyển sách và xem thông tin chi tiết của quyển
-sách đó, ở đây người dùng có thể đặt mua sách với số lượng cụ thể.
-Ngoài ra, ở trang này người dùng có thể để lại nhận xét cho sách, và đánh giá sách
-theo thang điểm 5 sao, ví dụ đánh giá quyển Harry Potter 3/5 sao và để lại nhận
-xét là “Chán”.
-2. Người dùng có thể xem danh sách những quyển sách mình đã đặt mua, xem thông
-tin từng quyển sách mình đã đặt mua, hủy đặt mua sách.
-
-***Yêu cầu thực hiện validate dữ liệu:**
-- Tất cả các ô nhập bắt buộc (required) không được để trống, sách không được trùng
-với sách đã có trong CSDL (cùng tiêu đề, cùng tác giả). Đăng kí tài khoản không
-được trùng với tài khoản đã có trong CSDL (cùng username).
-- Nếu có lỗi thì phải hiển thị lỗi theo ngôn ngữ phù hợp cho người dùng.
-- Khi thực hiện những tương tác quan trọng như xóa (Delete) hay tạo (Create) thì
-phải hiện lên cửa sổ thông báo hỏi lại quyết định người sử dụng (xác nhận
-(confirm) hoặc hủy (cancel)).
+sách đó
