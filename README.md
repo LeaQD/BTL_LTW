@@ -1,4 +1,3 @@
-# Bài Tập Lớn
 ## Tạo và quản lý website thư viện online.
 ### Trang thư viện online có 2 chức năng chính:
 1. Chức năng của quản lý (Admin).
